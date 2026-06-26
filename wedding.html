@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное Приглашение — SAQ by Qundyz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <style>
+        :root{
+            --be:#faf9f0;--go:#d4af37;--gl:#e8cb5a;
+            --br:#2d2d2d;--sl:#f5f5f5;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--be);color:var(--br);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+        h1,h2,h3{font-family:'Playfair Display',serif;}
+
+        .invitation-container{max-width:600px;margin:0 auto;}
+        
+        .gold-border{border:2px solid var(--go);padding:60px 40px;position:relative;background:linear-gradient(145deg,#ffffff 0%,#faf9f7 100%);box-shadow:0 25px 80px rgba(212,175,55,.2),0 10px 30px rgba(0,0,0,.1);border-radius:1.5rem;}
+        
+        .gold-border::before{content:'';position:absolute;top:12px;left:12px;right:12px;bottom:12px;border:1px solid var(--go);border-radius:1.4rem;pointer-events:none;}
+        
+        .ornament{position:absolute;width:50px;height:50px;border:2px solid var(--go);transform:rotate(45deg);}
+        .ornament-tl{top:25px;left:25px;}
+        .ornament-tr{top:25px;right:25px;}
+        .ornament-bl{bottom:25px;left:25px;}
+        .ornament-br{bottom:25px;right:25px;}
+        
+        .header{text-align:center;margin-bottom:40px;}
+        
+        .invitation{font-family:'Playfair Display',serif;font-size:16px;letter-spacing:6px;color:var(--go);text-transform:uppercase;margin-bottom:15px;font-weight:400;}
+        
+        .names{font-family:'Playfair Display',serif;font-size:44px;color:var(--ed);line-height:1.2;margin-bottom:10px;font-weight:700;}
+        .names .ampersand{font-size:32px;color:var(--go);margin:0 10px;font-style:italic;}
+        
+        .subtitle{font-family:'Playfair Display',serif;font-size:18px;color:var(--br);letter-spacing:2px;margin-bottom:30px;font-weight:400;}
+        
+        .divider{width:80px;height:2px;background:linear-gradient(90deg,transparent,var(--go),transparent);margin:25px auto;}
+        
+        .details{text-align:center;margin-bottom:35px;}
+        
+        .detail-item{margin-bottom:20px;}
+        
+        .detail-label{font-family:'Playfair Display',serif;font-size:14px;color:var(--go);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;font-weight:500;}
+        
+        .detail-value{font-family:'Playfair Display',serif;font-size:22px;color:var(--ed);font-weight:400;}
+        .detail-value small{font-size:14px;color:#666;}
+        
+        .message{font-family:'Playfair Display',serif;font-size:18px;color:#666;text-align:center;line-height:1.7;margin-bottom:35px;font-style:italic;font-weight:400;}
+        
+        .rsvp-section{text-align:center;margin-top:40px;padding-top:30px;border-top:1px solid rgba(212,175,55,.3);}
+        
+        .rsvp-title{font-family:'Playfair Display',serif;font-size:20px;color:var(--go);letter-spacing:3px;text-transform:uppercase;margin-bottom:25px;font-weight:500;}
+        
+        .rsvp-phone{font-family:'Inter',sans-serif;font-size:18px;color:var(--go);font-weight:600;text-decoration:none;display:inline-block;padding:12px 30px;background:var(--go);color:#fff;border-radius:50px;transition:all .2s;}
+        .rsvp-phone:hover{background:var(--gl);transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,175,55,.35);}
+        
+        .footer{text-align:center;margin-top:35px;padding-top:25px;border-top:1px solid rgba(212,175,55,.2);}
+        
+        .footer-text{font-family:'Playfair Display',serif;font-size:14px;color:#999;letter-spacing:2px;}
+        
+        .gold-dust{position:absolute;width:4px;height:4px;background:var(--go);border-radius:50%;opacity:.4;animation:sparkle 3s ease-in-out infinite;}
+        
+        @keyframes sparkle{0%,100%{opacity:.2;transform:scale(1);}50%{opacity:.6;transform:scale(1.5);}}
+        
+        @media(max-width:600px){
+            .gold-border{padding:40px 25px;}
+            .names{font-size:32px;}
+            .names .ampersand{font-size:24px;}
+            .detail-value{font-size:18px;}
+            .ornament{width:35px;height:35px;}
+            .ornament-tl,.ornament-tr{top:20px;}
+            .ornament-bl,.ornament-br{bottom:20px;}
+            .ornament-tl,.ornament-bl{left:20px;}
+            .ornament-tr,.ornament-br{right:20px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <div class="gold-border">
+            <div class="ornament ornament-tl"></div>
+            <div class="ornament ornament-tr"></div>
+            <div class="ornament ornament-bl"></div>
+            <div class="ornament ornament-br"></div>
+            
+            <div class="gold-dust" style="top:15%;left:20%;"></div>
+            <div class="gold-dust" style="top:25%;right:15%;animation-delay:1s;"></div>
+            <div class="gold-dust" style="bottom:30%;left:25%;animation-delay:2s;"></div>
+            <div class="gold-dust" style="bottom:20%;right:20%;animation-delay:1.5s;"></div>
+            
+            <div class="header">
+                <div class="invitation">Приглашение</div>
+                <div class="names">
+                    Александр <span class="ampersand">&</span> Мария
+                </div>
+                <div class="subtitle">С радостью приглашают вас на свою свадьбу</div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Дата</div>
+                    <div class="detail-value">15 Июля 2026</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Время</div>
+                    <div class="detail-value">16:00</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Место</div>
+                    <div class="detail-value">
+                        Ресторан "Золотой Дворец"<br>
+                        <small>г. Алматы, пр. Достык 123</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="message">
+                "Ваше присутствие сделает наш особенный день ещё более незабываемым. Будем счастливы разделить с вами этот момент радости и любви."
+            </div>
+            
+            <div class="rsvp-section">
+                <div class="rsvp-title">Подтвердите присутствие</div>
+                <a href="https://wa.me/77024175882" class="rsvp-phone" target="_blank">📲 +7 702 417 5882</a>
+            </div>
+            
+            <div class="footer">
+                <div class="footer-text">С любовью, Александр и Мария</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
